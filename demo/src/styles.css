@@ -1,0 +1,28 @@
+div {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 2rem;
+  align-self: center;
+}
+
+body {
+  font-size: 17px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.markdown-body {
+  margin: 5rem 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+pre,
+code {
+  font-family: Menlo, monospace;
+}
