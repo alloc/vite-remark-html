@@ -8,7 +8,8 @@
   "main": "dist/plugin.js",
   "files": [
     "src",
-    "dist"
+    "dist",
+    "client.d.ts"
   ],
   "scripts": {
     "build": "tsc -p .",

@@ -59,3 +59,17 @@ document.getElementById('markdown').innerHTML = html
 ```
 
 [Try the demo](./demo) to see it in action.
+
+### TypeScript usage
+
+In your `tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "types": ["vite-remark-html/client"]
+  }
+}
+```
+
+This lets you import `.md` files with type-checking support.
