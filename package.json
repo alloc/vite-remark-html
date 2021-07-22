@@ -1,6 +1,6 @@
 {
   "name": "vite-remark-html",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Process markdown with remark-html",
   "author": "Alec Larson",
   "license": "MIT",
