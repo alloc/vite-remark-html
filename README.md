@@ -22,21 +22,23 @@ export default {
 
 ### Filter options
 
-Markdown files can be filtered, in case you only want a subset to be processed by this plugin. For more details, see [here](https://github.com/rollup/plugins/tree/master/packages/pluginutils#include-and-exclude).
+Markdown files can be filtered, in case you only want a subset to be processed by this plugin.
 
-```
+```ts
 remarkHtml({
-  exclude: /\/node_modules\//
+  exclude: /\/node_modules\//,
 })
 ```
+
+For more details, see [here](https://github.com/rollup/plugins/tree/master/packages/pluginutils#include-and-exclude).
 
 ### HTML options
 
 All options listed [here](https://github.com/syntax-tree/hast-util-to-html/tree/7.1.3#tohtmltree-options) are also supported.
 
-```
+```ts
 remarkHtml({
-  allowDangerousHtml: true
+  allowDangerousHtml: true,
 })
 ```
 
