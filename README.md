@@ -20,6 +20,19 @@ export default {
 }
 ```
 
+### Remark plugins
+
+To add Remark plugins, call the `use` method on the Vite plugin. It returns the Vite plugin, so you can easily chain together multiple `.use` calls.
+
+```ts
+import remarkHtml from 'vite-remark-html'
+import remarkSlug from 'remark-slug'
+
+export default {
+  plugins: [remarkHtml().use(remarkSlug)],
+}
+```
+
 ### Filter options
 
 Markdown files can be filtered, in case you only want a subset to be processed by this plugin.
