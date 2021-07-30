@@ -48,7 +48,10 @@ export default ({ include, exclude, ...opts }: Options = {}): RemarkHtml => {
     async transform(code, id) {
       if (id.endsWith('.md') && filter(id)) {
         const result = await processor.process(code)
-        return `export default ` + JSON.stringify(result.toString('utf8'))
+        return {
+          code: `export default ` + JSON.stringify(result.toString('utf8')),
+          map: { mappings: '' },
+        }
       }
     },
     use(pluggable: any) {
